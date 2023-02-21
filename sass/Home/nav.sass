@@ -1,0 +1,67 @@
+.nav
+    display: flex
+    flex-wrap: wrap
+    background-color: $melon
+    align-items: center
+    justify-content: space-around
+    height: 10vh
+    border-bottom: 2px solid $melon
+    position: fixed
+    width: 100%
+    top: 0
+    left: 0
+    z-index: 10000
+
+
+    &__title
+        color: $light_violet
+        font-size: 2rem
+        text-transform: uppercase
+
+        @media screen and (min-width: 768px)
+            font-size: 3rem
+
+        &_copy
+            font-size: 1rem
+            
+
+    &__list
+        display: none
+        text-transform: uppercase
+        font-size:1.5rem
+
+        @media screen and (min-width: 1024px)
+            display: flex
+            flex-wrap: wrap
+
+        &_page
+            margin-left: 10px
+
+            &_lien
+                color: $light_violet
+
+                &:hover
+                    border-bottom: solid $dark_violet 3px
+
+    &__burger
+        display: flex
+        flex-direction: column
+        gap: 0.2rem
+
+        @media screen and (min-width: 1024px)
+            display: none
+
+        &_trait
+            width: 30px
+            height: 6px
+            background-color: $light_violet
+
+    &__lien
+        color: $light_violet
+
+
+
+
+
+
+

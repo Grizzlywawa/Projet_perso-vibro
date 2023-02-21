@@ -1,0 +1,93 @@
+.histoire
+    background-color: $dark_violet
+    padding-inline: 5%
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+
+    &__albert
+
+        &_citation
+            color: $pale_yellow
+            font-size: 1.5rem
+            text-align: right
+            padding-top: 10%
+
+            @media screen and (min-width: 576px)
+                font-size: 2rem
+            @media screen and (min-width: 768px)
+                font-size: 3rem
+            
+
+        &_cité
+            color: $pale_yellow
+            font-size: .8rem
+            text-align: right
+            margin-bottom: 10%
+
+    &__presentation
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+
+        &_illu
+            max-width: 250px
+            max-height: 250px
+            object-fit: cover
+            margin-bottom: 5%
+
+            
+            &:nth-of-type(2)
+                display: none
+
+                @media screen and (min-width:768px)
+                    display: initial
+
+        &_propos
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+            border: solid 2px $pale_yellow
+            border-radius: 25px
+            
+            &_title
+                width: 100%
+                text-align: center
+                color: $light_violet
+                margin-bottom: 5%
+                font-size: 1.5rem
+                text-shadow: 1px 1px 2px $dark
+
+            &_text
+                font-family: Helvetica,sans-serif
+                padding: 0 5% 5%
+
+    &__cta
+        background-color: $pale_yellow
+        padding: 1rem 3rem
+        color: $melon
+        font-weight: bold
+        text-transform: uppercase
+        border-radius: 25px
+        margin-top: 5%
+
+        &:first-of-type
+            background-color: $light_violet
+            margin-left: 30%
+
+        &:nth-of-type(2)
+            margin-right: 25%
+
+        &:nth-of-type(3)
+            margin-left: 30%
+
+        &:last-of-type
+            margin-right: 30%
+            margin-bottom: 5%
+            
+                    
+
+
