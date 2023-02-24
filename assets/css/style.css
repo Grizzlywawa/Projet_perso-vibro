@@ -75,7 +75,7 @@
   color: #C879FF;
 }
 .nav__list_page_lien:hover {
-  border-bottom: solid #B277A2 3px;
+  border-bottom: solid #7b506f 3px;
 }
 .nav__burger {
   display: flex;
@@ -128,7 +128,7 @@
   font-size: 1rem;
 }
 .header__slogan {
-  color: #B277A2;
+  color: #7b506f;
   font-size: 2.5rem;
   position: absolute;
   top: 25%;
@@ -143,7 +143,7 @@
   }
 }
 .header__cta {
-  background-color: #B277A2;
+  background-color: #7b506f;
   padding: 1rem 3rem;
   color: #FFFFC7;
   font-weight: bold;
@@ -197,7 +197,7 @@
 }
 
 .histoire {
-  background-color: #B277A2;
+  background-color: #7b506f;
   padding-inline: 5%;
   display: flex;
   flex-wrap: wrap;
@@ -365,6 +365,28 @@
 .histoire__cta:last-of-type {
   margin-right: 30%;
   margin-bottom: 5%;
+}
+
+.produits {
+  background-color: #C879FF;
+  padding-inline: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #FCBCB8;
+}
+.produits__title {
+  color: #FCBCB8;
+  font-size: 1.5rem;
+  padding-top: 10%;
+}
+.produits__vibration {
+  color: #7b506f;
+}
+.produits__vibration_txt1 {
+  text-align: center;
+  margin-block: 1%;
 }
 
 /*# sourceMappingURL=style.css.map */
