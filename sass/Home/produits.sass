@@ -7,25 +7,178 @@
     justify-content: center
     border-bottom: 2px solid $melon
 
+    @media screen and (min-width: 1024px)
+        justify-content: space-between
+        align-items: flex-start
+
     &__title
         color: $melon
-        font-size: 1.5rem
-        padding-top: 10%
+        font-size: 2rem
+        margin-block: 10%
+        text-transform: uppercase
+        text-align: center
+        text-shadow: 1px 1px 2px $dark
+        border: 2px solid $pale_yellow
 
-    &__vibration
-        color: $dark_violet
-        margin-block: 2%
+        @media screen and (min-width:576px)
+            font-size: 3rem
 
-        &_txt1
-            text-align: center
-            margin-bottom: 5%
+        @media screen and (min-width: 1024px)
+            width: 100%
+            margin-block: 5%
 
-        &_txt2
-            text-align: right
+        @media screen and (min-width: 1536px)
+            font-size: 4rem
+
+    &__present
+
+        @media screen and (min-width: 1024px)
+            width: 45%
+
+        &_video
+
+            @media screen and (min-width:1024px)
+                height: 60vh
+                object-fit: cover
+
+            @merdia screen and (min-width:1536px)
+                height: 80vh
+
+        &_vibration
+            color: $dark_violet
+            margin-block: 2%
+            text-shadow: 1px 1px 2px $pale_yellow
+            border: thick double $pale_yellow
+            border-radius: 25px
+
+            @media screen and (min-width: 768px)
+                font-size: 1.2rem
+
+            @media screen and (min-width: 1280px)
+                font-size: 1.7rem
+
+            @media screen and (min-width: 1536px)
+                font-size: 2rem
+
+            &_txt1
+                text-align: center
+                margin-bottom: 5%
+
+            &_txt2
+                text-align: right
+                padding: 0 5% 5% 0
+
+                @media screen and (min-width: 1920px)
+                    padding-left: 5%
 
     &__liste
         display: grid
         grid-template-columns: repeat(2, minmax(0, 1fr))
         gap: 5%
-        margin: 5% 0 20%
+        margin: 5% 0 10%
 
+        @media screen and (min-width: 1024px)
+            width: 50%
+            margin-top: 0
+
+        @media screen and (min-width: 1536px)
+            margin-bottom: 5%
+
+        &_article
+            position: relative
+
+            &_cta
+                position: absolute
+                top: 35%
+                left: 5%
+                background-color: $dark_violet
+                padding: .7rem 1rem
+                color: $melon
+                font-size: .5rem
+                font-weight: bold
+                text-transform: uppercase
+                border-radius: 25px
+
+                @media screen and (min-width:576px)
+                    padding: 1rem 1.5rem
+                    font-size: 1rem
+
+                @media screen and (min-width: 1024px)
+                    padding: .7rem 1rem
+                    font-size: .5rem
+
+                @media screen and (min-width: 1280px)
+                    padding: 1rem 1.5rem
+                    font-size: .8rem
+                    top: 30%
+
+                @media screen and (min-width: 1536px)
+                    top: 40%
+                
+                @media screen and (min-width: 1920px)
+                    top: 45%
+
+            &_name
+                color: $dark_violet
+                font-size: .8rem
+                margin-block: 5%
+
+                @media screen and (min-width:576px)
+                    font-size: 1rem
+
+                @media screen and (min-width: 768px)
+                    font-size: 1.5rem
+
+                @media screen and (min-width: 1024px)
+                    font-size: 1rem
+
+                    @media screen and (min-width: 1280px)
+                        font-size: 1.5rem
+            &_price
+                color: $dark_violet
+                font-size: .8rem
+
+                @media screen and (min-width:576px)
+                    font-size: 1rem
+
+                @media screen and (min-width: 768px)
+                    font-size: 1.5rem
+
+                @media screen and (min-width: 1024px)
+                    font-size: 1rem
+
+                @media screen and (min-width: 1280px)
+                    font-size: 1.5rem
+
+            &_descr
+                color: $dark_violet
+                font-size: .8rem
+                margin-block: 5%
+
+                @media screen and (min-width:576px)
+                    font-size: 1rem
+
+                @media screen and (min-width: 768px)
+                    font-size: 1.5rem
+
+                @media screen and (min-width: 1024px)
+                    font-size: 1rem
+
+                @media screen and (min-width: 1280px)
+                    font-size: 1.5rem
+
+            &_txt
+                font-family: Helvetica,sans-serif
+                font-size: .5rem
+
+                @media screen and (min-width:576px)
+                    font-size: .8rem
+
+                @media screen and (min-width: 768px)
+                    font-size: 1.1rem
+
+                @media screen and (min-width: 1024px)
+                    font-size: .8rem
+
+                @media screen and (min-width: 1280px)
+                    font-size: 1.1rem
