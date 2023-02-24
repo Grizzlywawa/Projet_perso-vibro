@@ -1,11 +1,14 @@
 .header
     width: 100%
     position: relative
-    margin: auto
     height: 100vh
     overflow: hidden
     text-align: center
     border-bottom: 2px solid $melon
+    display: flex
+    flex-wrap: wrap
+    align-content: flex-end
+    justify-content: center
 
     &__title
         color: $light_violet
@@ -20,7 +23,6 @@
 
         @media screen and (min-width: 1024px)
             display: inline
-
 
         &_copy
             font-size: 1rem
@@ -45,27 +47,13 @@
         font-weight: bold
         text-transform: uppercase
         border-radius: 25px
-        position: absolute
-        bottom: 10%
-        left: 25%
         z-index: 1000
-
-        @media screen and (min-width: 576px)
-            left: 33%
-
-        @media screen and (min-width: 768px)
-            left: 37%
-
-        @media screen and (min-width: 1024px)
-            left: 40%
-
-        @media screen and (min-width: 1500px)
-            left: 43%
+        margin-bottom: 15%
 
     &__menu
         position: absolute
         left: 0
-        bottom: 0
+        bottom: 3%
         z-index: 100
         width: 100%
         text-align: center
@@ -73,24 +61,24 @@
         &_label
             cursor: pointer
             display: inline-block
-            width: 25px
-            height: 25px
+            width: 15px
+            height: 15px
             background: none
             border-radius: 50px
             border: solid 1px $light_violet
+            margin-right: 5px
 
             &:hover
                 background-color: $melon
                 border: none
 
-
             &:focus
                 background-color: $melon
                 border: none
 
-
     &__input
         opacity: 0
+        display: none
 
     &__img
         height: 100vh
@@ -99,7 +87,6 @@
         position: absolute
         z-index: 10
         transition: left 0s .75s
-            
 
     [id^="slide"]:checked+ .header__img
         left: 0

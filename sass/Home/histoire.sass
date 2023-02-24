@@ -5,6 +5,7 @@
     flex-wrap: wrap
     align-items: center
     justify-content: center
+    border-bottom: 2px solid $melon
 
     &__albert
 
@@ -18,7 +19,8 @@
                 font-size: 2rem
             @media screen and (min-width: 768px)
                 font-size: 3rem
-            
+            @media screen and (min-width: 1280px)
+                font-size: 4rem
 
         &_cité
             color: $pale_yellow
@@ -32,18 +34,43 @@
         align-items: center
         justify-content: center
 
-        &_illu
-            max-width: 250px
-            max-height: 250px
-            object-fit: cover
-            margin-bottom: 5%
+        @media screen and (min-width: 1024px)
+            display: grid
+            grid-template-columns: repeat(2, minmax(0, 100%))
+            grid-template-rows: repeat(1 minmax(0, 1fr))
+            gap: 10px
+            width: 100%
 
-            
-            &:nth-of-type(2)
-                display: none
+        &_img
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
 
-                @media screen and (min-width:768px)
-                    display: initial
+            @media screen and (min-width: 768px)
+                justify-content: space-around
+
+            &_illu
+                max-height: 50vh
+                object-fit: cover
+                margin-bottom: 5%
+
+                @media screen and (min-width: 1024px)
+                    max-height: 50vh
+                @media screen and (min-width: 1280px)
+                    max-height: 60vh
+                @media screen and (min-width: 1536px)
+                    max-height: 50vh
+                @media screen and (min-width: 1920px)
+                    max-height: 45vh
+
+                &:nth-of-type(2)
+                    display: none
+
+                    @media screen and (min-width:768px)
+                        display: initial
+                        max-width: 50%
+                    @media screen and (min-width:1024px)
+                        max-width: 100%
 
         &_propos
             display: flex
@@ -52,7 +79,8 @@
             justify-content: center
             border: solid 2px $pale_yellow
             border-radius: 25px
-            
+            width: 100%
+
             &_title
                 width: 100%
                 text-align: center
@@ -60,6 +88,11 @@
                 margin-bottom: 5%
                 font-size: 1.5rem
                 text-shadow: 1px 1px 2px $dark
+
+                @media screen and (min-width:576px)
+                    font-size: 2rem
+                @media screen and (min-width:1280px)
+                    font-size: 3rem
 
             &_text
                 font-family: Helvetica,sans-serif
@@ -69,17 +102,27 @@
         background-color: $pale_yellow
         padding: 1rem 3rem
         color: $melon
+        font-size: .8rem
         font-weight: bold
         text-transform: uppercase
         border-radius: 25px
-        margin-top: 5%
+        margin-top: 2%
+
+        @media screen and (min-width: 576px)
+            font-size: 1rem
+
+        @media screen and (min-width: 1024px)
+            font-size: 2rem
+
+        @media screen and (min-width: 1817px)
+            font-size: 3.5rem
 
         &:first-of-type
             background-color: $light_violet
             margin-left: 30%
 
         &:nth-of-type(2)
-            margin-right: 25%
+            margin-right: 30%
 
         &:nth-of-type(3)
             margin-left: 30%
@@ -87,7 +130,3 @@
         &:last-of-type
             margin-right: 30%
             margin-bottom: 5%
-            
-                    
-
-
