@@ -383,10 +383,20 @@
 }
 .produits__vibration {
   color: #7b506f;
+  margin-block: 2%;
 }
 .produits__vibration_txt1 {
   text-align: center;
-  margin-block: 1%;
+  margin-bottom: 5%;
+}
+.produits__vibration_txt2 {
+  text-align: right;
+}
+.produits__liste {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5%;
+  margin: 5% 0 20%;
 }
 
 /*# sourceMappingURL=style.css.map */
