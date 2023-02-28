@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .body {
-  background-color: #0A0908;
+  background-color: #FCBCB8;
   font-family: Gobold, sans-serif;
   scroll-behavior: smooth;
 }
@@ -33,11 +33,11 @@
 .nav {
   display: flex;
   flex-wrap: wrap;
-  background-color: #FCBCB8;
+  background: opacity(0);
   align-items: center;
   justify-content: space-around;
   height: 10vh;
-  border-bottom: 2px solid #FCBCB8;
+  box-shadow: -2px #FCBCB8;
   position: fixed;
   width: 100%;
   top: 0;
@@ -48,6 +48,7 @@
   color: #C879FF;
   font-size: 2rem;
   text-transform: uppercase;
+  text-shadow: 1px 1px #0A0908;
 }
 @media screen and (min-width: 768px) {
   .nav__title {
@@ -61,6 +62,7 @@
   display: none;
   text-transform: uppercase;
   font-size: 1.5rem;
+  text-shadow: 1px 1px #0A0908;
 }
 @media screen and (min-width: 1024px) {
   .nav__list {
@@ -102,7 +104,7 @@
   height: 100vh;
   overflow: hidden;
   text-align: center;
-  border-bottom: 2px solid #FCBCB8;
+  border-bottom: 2px solid #7b506f;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-end;
@@ -197,13 +199,12 @@
 }
 
 .histoire {
-  background-color: #7b506f;
   padding-inline: 5%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid #FCBCB8;
+  border-bottom: 2px solid #7b506f;
 }
 .histoire__albert_citation {
   color: #FFFFC7;
@@ -368,13 +369,12 @@
 }
 
 .produits {
-  background-color: #C879FF;
   padding-inline: 5%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid #FCBCB8;
+  border-bottom: 2px solid #7b506f;
 }
 @media screen and (min-width: 1024px) {
   .produits {
