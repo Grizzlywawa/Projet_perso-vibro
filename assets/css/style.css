@@ -628,4 +628,12 @@
   }
 }
 
+.news__title {
+  color: #7b506f;
+  font-size: 2rem;
+  margin-block: 10%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,143 +1,297 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="assets/css/all.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="script.js"></script>
 
-        <title>Vibroton&copy;</title>
-    </head>
+    <title>Vibroton&copy;</title>
+  </head>
 
-    <body class="body">
+  <body class="body">
+    <nav class="nav">
+      <a href="#"
+        ><h1 class="nav__title">
+          VIBROTON<span class="nav__title_copy">&copy;</span>
+        </h1></a
+      >
+      <ul class="nav__list">
+        <li class="nav__list_page">
+          <a class="nav__list_page_lien" href="#">Home</a>
+        </li>
+        <li class="nav__list_page">
+          <a class="nav__list_page_lien" href="#produits">Incontournables</a>
+        </li>
+        <li class="nav__list_page">
+          <a class="nav__list_page_lien" href="#news">Nouveautés</a>
+        </li>
+        <li class="nav__list_page">
+          <a class="nav__list_page_lien" href="#">Le Catalogue</a>
+        </li>
+        <li class="nav__list_page">
+          <a class="nav__list_page_lien" href="#avis">Avis</a>
+        </li>
+        <li class="nav__list_page">
+          <a class="nav__list_page_lien" href="#entreprise">Notre entreprise</a>
+        </li>
+      </ul>
+      <span class="nav__burger">
+        <span class="nav__burger_trait"></span>
+        <span class="nav__burger_trait"></span>
+        <span class="nav__burger_trait"></span>
+      </span>
+      <a class="nav__lien" href="#"
+        ><i class="nav__lien_basket fa-solid fa-basket-shopping fa-2x"></i
+      ></a>
+    </nav>
+
+    <header id="header" class="header">
+      <h2 class="header__title">
+        Vibroton<span class="header__title_copy">&copy;</span>
+      </h2>
+      <h3 class="header__slogan">Savoir vous faire vibrer !</h3>
+      <a class="header__cta" href="#">Voir le produit</a>
+      <div class="header__menu">
+        <label class="header__menu_label" for="slide_dot_1"></label>
+        <label class="header__menu_label" for="slide_dot_2"></label>
+        <label class="header__menu_label" for="slide_dot_3"></label>
+        <label class="header__menu_label" for="slide_dot_4"></label>
+        <label class="header__menu_label" for="slide_dot_5"></label>
+      </div>
+      <input
+        class="header__input"
+        id="slide_dot_1"
+        type="radio"
+        name="slides"
+        checked
+      />
+      <img
+        class="header__img"
+        src="assets/images/vibro-slider-1.jpg"
+        alt="homme torse nu"
+      />
+      <input
+        class="header__input"
+        id="slide_dot_2"
+        type="radio"
+        name="slides"
+      />
+      <img
+        class="header__img"
+        src="assets/images/vibro-slider-2.jpg"
+        alt="homme femme nus torse culotte"
+      />
+      <input
+        class="header__input"
+        id="slide_dot_3"
+        type="radio"
+        name="slides"
+      />
+      <img
+        class="header__img"
+        src="assets/images/vibro-slider-3.jpg"
+        alt="homme blanc torse nu abdos"
+      />
+      <input
+        class="header__input"
+        id="slide_dot_4"
+        type="radio"
+        name="slides"
+      />
+      <img
+        class="header__img"
+        src="assets/images/vibro-slider-4.jpg"
+        alt="femme dévêtue soutien-gorge"
+      />
+      <input
+        class="header__input"
+        id="slide_dot_5"
+        type="radio"
+        name="slides"
+      />
+      <img
+        class="header__img"
+        src="assets/images/vibro-slider-5.jpg"
+        alt="femme dévêtue lac rocher"
+      />
+    </header>
+
+    <section id="histoire" class="histoire">
+      <div class="histoire__albert">
+        <h2 class="histoire__albert_citation">
+          "Tout est énergie et vibration."
+        </h2>
+        <h3 class="histoire__albert_cité">Albert Einstein</h3>
+      </div>
+      <article class="histoire__presentation">
+        <div class="histoire__presentation_img">
+          <img
+            class="histoire__presentation_img_illu"
+            src="assets/images/illu_histoire.jpg"
+            alt="femme rousse masque noir"
+          />
+          <img
+            class="histoire__presentation_img_illu"
+            src="assets/images/illu_histoire_2.jpg"
+            alt="couple lit sous couette"
+          />
+        </div>
+
+        <div class="histoire__presentation_propos">
+          <h3 class="histoire__presentation_propos_title">
+            Histoire du Vibromasseur
+          </h3>
+          <p class="histoire__presentation_propos_text">
+            Bien que l'utilisation de vibrations à des fins médicales et
+            thérapeutiques remonte à l'Antiquité, le vibromasseur tel que nous
+            le connaissons aujourd'hui a une histoire relativement récente.Le
+            vibromasseur a été inventé au 19ème siècle, à l'époque victorienne,
+            en Angleterre. <br /><br />
+            À cette époque, les femmes étaient censées être chastes et
+            réservées, et la masturbation était considérée comme un acte impur
+            et honteux. Cependant, de nombreuses femmes souffraient de ce qu'on
+            appelait alors "hystérie", un terme utilisé pour décrire une variété
+            de symptômes tels que l'anxiété, la nervosité, les sautes d'humeur
+            et les douleurs abdominales, qui étaient souvent associés à une
+            surcharge émotionnelle ou à une absence de relations sexuelles
+            satisfaisantes. <br /><br />
+            Pour soulager ces symptômes, les médecins utilisaient des "massages
+            pelviens" pour induire l'orgasme chez les femmes. Cependant, ces
+            massages étaient longs, coûteux et souvent maladroits. Pour remédier
+            à cette situation, des inventeurs ont créé des machines à vibrer,
+            d'abord manuelles puis électriques, destinées à procurer des
+            orgasmes plus rapidement et plus facilement. <br /><br />
+            Le premier vibromasseur électrique a été breveté en 1880 par Joseph
+            Mortimer Granville, un médecin britannique. Le vibromasseur était
+            initialement destiné à être utilisé par les médecins pour soulager
+            les symptômes de l'hystérie chez les femmes, mais il est rapidement
+            devenu un objet de consommation courant dans les foyers.
+            <br /><br />
+            Au début du 20ème siècle, les vibromasseurs étaient largement
+            commercialisés et utilisés pour des raisons médicales et non
+            médicales. Cependant, avec l'avènement de la sexualité moderne dans
+            les années 1960, l'utilisation des vibromasseurs a commencé à se
+            populariser comme un objet de plaisir sexuel. Depuis lors, les
+            vibromasseurs sont devenus un accessoire de choix pour les personnes
+            souhaitant explorer leur sexualité et leur plaisir. <br /><br />
+            Aujourd'hui, les vibromasseurs sont disponibles dans une grande
+            variété de tailles, de formes et de textures, pour répondre aux
+            besoins et aux préférences de chacun. Les avancées technologiques
+            ont permis de développer des vibromasseurs de haute qualité avec des
+            fonctions avancées, tels que la connectivité Bluetooth, les modes de
+            vibration multiples, les capteurs de mouvement et les fonctions de
+            contrôle à distance. Le vibromasseur reste un objet de plaisir
+            sexuel populaire, ainsi qu'un outil thérapeutique pour les personnes
+            souffrant de dysfonctionnement sexuel ou d'autres problèmes de
+            santé.
+          </p>
+        </div>
+      </article>
+      <a class="histoire__cta" href="#entreprise">Notre Entreprise</a>
+      <a class="histoire__cta" href="#produits">Nos Incontournables</a>
+      <a class="histoire__cta" href="#">Notre Catalogue</a>
+      <a class="histoire__cta" href="#news">Nos Nouveautés</a>
+    </section>
+
+    <section id="produits" class="produits">
+      <h2 class="produits__title">Nos incontournables</h2>
+      <div class="produits__present">
+        <video controls class="produits__present_video">
+          <source src="assets/vid/video_incontournables.mp4" type="video/mp4" />
+        </video>
+        <div class="produits__present_vibration">
+          <p class="produits__present_vibration_txt1">
+            La vibration l'imiterait les effets du sport.
+          </p>
+          <p class="produits__present_vibration_txt2">
+            Lorsque l'appareil vibre, il transmet de l'énergie au corps, et les
+            muscles se contractent et détendent plusieurs fois au cours de
+            chaque seconde.
+          </p>
+        </div>
+      </div>
+      <div class="produits__liste">
+        <article class="produits__liste_article">
+          <a href="#"
+            ><img
+              class="produits__liste_article_img"
+              src="assets/images/vibro-slider-2.jpg"
+              alt=""
+          /></a>
+          <a class="produits__liste_article_cta" href="">Ajouter au panier</a>
+          <h3 class="produits__liste_article_name">Nom du Produit</h3>
+          <h4 class="produits__liste_article_price">Prix</h4>
+          <h5 class="produits__liste_article_descr">Description du produit</h5>
+          <p class="produits__liste_article_txt">
+            matière, taille, puissance,motorisation rechargeable,pays de
+            fabrication
+          </p>
+        </article>
+        <article class="produits__liste_article">
+          <a href="#"
+            ><img
+              class="produits__liste_article_img"
+              src="assets/images/vibro-slider-2.jpg"
+              alt=""
+          /></a>
+          <a class="produits__liste_article_cta" href="">Ajouter au panier</a>
+          <h3 class="produits__liste_article_name">Nom du Produit</h3>
+          <h4 class="produits__liste_article_price">Prix</h4>
+          <h5 class="produits__liste_article_descr">Description du produit</h5>
+          <p class="produits__liste_article_txt">
+            matière, taille, puissance,motorisation rechargeable,pays de
+            fabrication
+          </p>
+        </article>
+        <article class="produits__liste_article">
+          <a href=""
+            ><img
+              class="produits__liste_article_img"
+              src="assets/images/vibro-slider-2.jpg"
+              alt=""
+          /></a>
+          <a class="produits__liste_article_cta" href="">Ajouter au panier</a>
+          <h3 class="produits__liste_article_name">Nom du Produit</h3>
+          <h4 class="produits__liste_article_price">Prix</h4>
+          <h5 class="produits__liste_article_descr">Description du produit</h5>
+          <p class="produits__liste_article_txt">
+            matière, taille, puissance,motorisation rechargeable,pays de
+            fabrication
+          </p>
+        </article>
+        <article class="produits__liste_article">
+          <a href="#"
+            ><img
+              class="produits__liste_article_img"
+              src="assets/images/vibro-slider-2.jpg"
+              alt=""
+          /></a>
+          <a class="produits__liste_article_cta" href="">Ajouter au panier</a>
+          <h3 class="produits__liste_article_name">Nom du Produit</h3>
+          <h4 class="produits__liste_article_price">Prix</h4>
+          <h5 class="produits__liste_article_descr">Description du produit</h5>
+          <p class="produits__liste_article_txt">
+            matière, taille, puissance,motorisation rechargeable,pays de
+            fabrication
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="news" class="news">
+        <h2 class="news__title">Nos Nouveautés</h2>
         
-        <nav class="nav">
-            <a href="#"><h1 class="nav__title">VIBROTON<span class="nav__title_copy">&copy;</span></h1></a>
-            <ul class="nav__list">
-                <li class="nav__list_page"><a class="nav__list_page_lien" href="#">Home</a></li>
-                <li class="nav__list_page"><a class="nav__list_page_lien" href="#produits">Incontournables</a></li>
-                <li class="nav__list_page"><a class="nav__list_page_lien" href="#news">Nouveautés</a></li>
-                <li class="nav__list_page"><a class="nav__list_page_lien" href="#">Le Catalogue</a></li>
-                <li class="nav__list_page"><a class="nav__list_page_lien" href="#avis">Avis</a></li>
-                <li class="nav__list_page"><a class="nav__list_page_lien" href="#entreprise">Notre entreprise</a></li>
-            </ul>
-            <span class="nav__burger">
-                <span class="nav__burger_trait"></span>
-                <span class="nav__burger_trait"></span>
-                <span class="nav__burger_trait"></span>
-                </span>
-            <a class="nav__lien" href="#"><i class="nav__lien_basket fa-solid fa-basket-shopping fa-2x"></i></a>
-        </nav>
+    </section>
 
-        <header id="header" class="header">
-            <h2 class="header__title">Vibroton<span class="header__title_copy">&copy;</span></h2>
-            <h3 class="header__slogan">Savoir vous faire vibrer !</h3>
-            <a class="header__cta" href="#">Voir le produit</a>
-            <div class=header__menu>
-                <label class="header__menu_label" for="slide_dot_1"></label>
-                <label class="header__menu_label" for="slide_dot_2"></label>
-                <label class="header__menu_label" for="slide_dot_3"></label>
-                <label class="header__menu_label" for="slide_dot_4"></label>
-                <label class="header__menu_label" for="slide_dot_5"></label>
-            </div>
-            <input class="header__input" id="slide_dot_1" type="radio" name="slides" checked>
-            <img class="header__img" src="assets/images/vibro-slider-1.jpg" alt="homme torse nu">
-            <input class="header__input" id="slide_dot_2" type="radio" name="slides">
-            <img class="header__img" src="assets/images/vibro-slider-2.jpg" alt="homme femme nus torse culotte">
-            <input class="header__input" id="slide_dot_3" type="radio" name="slides">
-            <img class="header__img" src="assets/images/vibro-slider-3.jpg" alt="homme blanc torse nu abdos">
-            <input class="header__input" id="slide_dot_4" type="radio" name="slides">
-            <img class="header__img" src="assets/images/vibro-slider-4.jpg" alt="femme dévêtue soutien-gorge">
-            <input class="header__input" id="slide_dot_5" type="radio" name="slides">
-            <img class="header__img" src="assets/images/vibro-slider-5.jpg" alt="femme dévêtue lac rocher">
-        </header>
+    <section id="avis" class="avis"></section>
 
-        <section id="histoire" class="histoire">
-            <div class="histoire__albert">
-                <h2 class="histoire__albert_citation">"Tout est énergie et vibration."</h2>
-                <h3 class="histoire__albert_cité">Albert Einstein</h3>
-            </div>
-            <article class="histoire__presentation">
-                <div class="histoire__presentation_img">
-                    <img class="histoire__presentation_img_illu" src="assets/images/illu_histoire.jpg" alt="femme rousse masque noir">
-                    <img class="histoire__presentation_img_illu" src="assets/images/illu_histoire_2.jpg" alt="couple lit sous couette">
-                </div>
-                
-                <div class="histoire__presentation_propos">
-                    <h3 class="histoire__presentation_propos_title">Histoire du Vibromasseur</h3>
-                    <p class="histoire__presentation_propos_text">Bien que l'utilisation de vibrations à des fins médicales et thérapeutiques remonte à l'Antiquité, le vibromasseur tel que nous le connaissons aujourd'hui a une histoire relativement récente.Le vibromasseur a été inventé au 19ème siècle, à l'époque victorienne, en Angleterre. <br><br> À cette époque, les femmes étaient censées être chastes et réservées, et la masturbation était considérée comme un acte impur et honteux. Cependant, de nombreuses femmes souffraient de ce qu'on appelait alors "hystérie", un terme utilisé pour décrire une variété de symptômes tels que l'anxiété, la nervosité, les sautes d'humeur et les douleurs abdominales, qui étaient souvent associés à une surcharge émotionnelle ou à une absence de relations sexuelles satisfaisantes. <br><br> Pour soulager ces symptômes, les médecins utilisaient des "massages pelviens" pour induire l'orgasme chez les femmes. Cependant, ces massages étaient longs, coûteux et souvent maladroits. Pour remédier à cette situation, des inventeurs ont créé des machines à vibrer, d'abord manuelles puis électriques, destinées à procurer des orgasmes plus rapidement et plus facilement. <br><br> Le premier vibromasseur électrique a été breveté en 1880 par Joseph Mortimer Granville, un médecin britannique. Le vibromasseur était initialement destiné à être utilisé par les médecins pour soulager les symptômes de l'hystérie chez les femmes, mais il est rapidement devenu un objet de consommation courant dans les foyers. <br><br> Au début du 20ème siècle, les vibromasseurs étaient largement commercialisés et utilisés pour des raisons médicales et non médicales. Cependant, avec l'avènement de la sexualité moderne dans les années 1960, l'utilisation des vibromasseurs a commencé à se populariser comme un objet de plaisir sexuel. Depuis lors, les vibromasseurs sont devenus un accessoire de choix pour les personnes souhaitant explorer leur sexualité et leur plaisir. <br><br> Aujourd'hui, les vibromasseurs sont disponibles dans une grande variété de tailles, de formes et de textures, pour répondre aux besoins et aux préférences de chacun. Les avancées technologiques ont permis de développer des vibromasseurs de haute qualité avec des fonctions avancées, tels que la connectivité Bluetooth, les modes de vibration multiples, les capteurs de mouvement et les fonctions de contrôle à distance. Le vibromasseur reste un objet de plaisir sexuel populaire, ainsi qu'un outil thérapeutique pour les personnes souffrant de dysfonctionnement sexuel ou d'autres problèmes de santé.</p>
-                </div> 
-            </article>
-            <a class="histoire__cta" href="#entreprise">Notre Entreprise</a>
-            <a class="histoire__cta"  href="#produits">Nos Incontournables</a>
-            <a class="histoire__cta" href="#">Notre Catalogue</a>
-            <a class="histoire__cta" href="#news">Nos Nouveautés</a>
+    <section id="entreprise" class="entreprise"></section>
 
-        </section>
-    
-        <section id="produits" class="produits">
-            <h2 class="produits__title">Nos incontournables</h2>
-            <div class="produits__present">
-                <video controls class="produits__present_video"> <source src="assets/vid/video_incontournables.mp4" type="video/mp4"></video>
-                <div class="produits__present_vibration">
-                <p class="produits__present_vibration_txt1">La vibration l'imiterait les effets du sport.</p>
-                <p class="produits__present_vibration_txt2">Lorsque l'appareil vibre, il transmet de l'énergie au corps, et les muscles se contractent et détendent plusieurs fois au cours de chaque seconde.</p> 
-                </div>
-            </div>  
-            <div class="produits__liste">
-                <article class="produits__liste_article">
-                    <a href="#"><img class="produits__liste_article_img" src="assets/images/vibro-slider-2.jpg" alt=""></a>
-                    <a class="produits__liste_article_cta" href="">Ajouter au panier</a>
-                    <h3 class="produits__liste_article_name">Nom du Produit</h3>
-                    <h4 class="produits__liste_article_price">Prix</h4>
-                    <h5 class="produits__liste_article_descr">Description du produit</h5>
-                    <p class="produits__liste_article_txt">matière, taille, puissance,motorisation rechargeable,pays de fabrication</p>
-                </article>
-                <article class="produits__liste_article">
-                    <a href="#"><img class="produits__liste_article_img" src="assets/images/vibro-slider-2.jpg" alt=""></a>
-                    <a class="produits__liste_article_cta" href="">Ajouter au panier</a>
-                    <h3 class="produits__liste_article_name">Nom du Produit</h3>
-                    <h4 class="produits__liste_article_price">Prix</h4>
-                    <h5 class="produits__liste_article_descr">Description du produit</h5>
-                    <p class="produits__liste_article_txt">matière, taille, puissance,motorisation rechargeable,pays de fabrication</p>
-                </article>
-                <article class="produits__liste_article">
-                    <a href=""><img class="produits__liste_article_img" src="assets/images/vibro-slider-2.jpg" alt=""></a>
-                    <a class="produits__liste_article_cta" href="">Ajouter au panier</a>
-                    <h3 class="produits__liste_article_name">Nom du Produit</h3>
-                    <h4 class="produits__liste_article_price">Prix</h4>
-                    <h5 class="produits__liste_article_descr">Description du produit</h5>
-                    <p class="produits__liste_article_txt">matière, taille, puissance,motorisation rechargeable,pays de fabrication</p>
-                </article>
-                <article class="produits__liste_article">
-                    <a href="#"><img class="produits__liste_article_img" src="assets/images/vibro-slider-2.jpg" alt=""></a>
-                    <a class="produits__liste_article_cta" href="">Ajouter au panier</a>
-                    <h3 class="produits__liste_article_name">Nom du Produit</h3>
-                    <h4 class="produits__liste_article_price">Prix</h4>
-                    <h5 class="produits__liste_article_descr">Description du produit</h5>
-                    <p class="produits__liste_article_txt">matière, taille, puissance,motorisation rechargeable,pays de fabrication</p>
-                </article>
-            </div>
-            
-        </section>
-
-        <section id="news" class="news">
-
-        </section>
-
-        <section id="avis" class="avis">
-
-        </section>
-
-        <section id="entreprise" class="entreprise">
-
-        </section>
-
-        <footer class="footer">
-
-        </footer>
-    </body>
+    <footer class="footer"></footer>
+  </body>
 </html>
