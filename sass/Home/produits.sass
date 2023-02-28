@@ -11,13 +11,13 @@
         align-items: flex-start
 
     &__title
-        color: $melon
+        color: $pale_yellow
         font-size: 2rem
         margin-block: 10%
         text-transform: uppercase
         text-align: center
         text-shadow: 1px 1px 2px $dark
-        border: 2px solid $pale_yellow
+        border: 2px solid $light_violet
 
         @media screen and (min-width:576px)
             font-size: 3rem
@@ -46,7 +46,6 @@
         &_vibration
             color: $dark_violet
             margin-block: 2%
-            text-shadow: 1px 1px 2px $pale_yellow
             border: thick double $pale_yellow
             border-radius: 25px
 
@@ -86,9 +85,12 @@
         &_article
             position: relative
 
+            &_img
+                border: .5rem solid $pale_yellow
+
             &_cta
                 position: absolute
-                top: 35%
+                top: 30%
                 left: 5%
                 background-color: $dark_violet
                 padding: .7rem 1rem
@@ -97,10 +99,15 @@
                 font-weight: bold
                 text-transform: uppercase
                 border-radius: 25px
+                display: none
 
                 @media screen and (min-width:576px)
                     padding: 1rem 1.5rem
                     font-size: 1rem
+                    display: block
+
+                @media screen and (min-width:768px)
+                    top: 35%
 
                 @media screen and (min-width: 1024px)
                     padding: .7rem 1rem
@@ -112,10 +119,10 @@
                     top: 30%
 
                 @media screen and (min-width: 1536px)
-                    top: 40%
+                    top: 35%
                 
                 @media screen and (min-width: 1920px)
-                    top: 45%
+                    top: 40%
 
             &_name
                 color: $dark_violet

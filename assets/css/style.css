@@ -33,11 +33,10 @@
 .nav {
   display: flex;
   flex-wrap: wrap;
-  background: opacity(0);
+  background: rgba(255, 255, 199, 0.1);
   align-items: center;
   justify-content: space-around;
   height: 10vh;
-  box-shadow: -2px #FCBCB8;
   position: fixed;
   width: 100%;
   top: 0;
@@ -211,6 +210,7 @@
   font-size: 1.5rem;
   text-align: right;
   padding-top: 10%;
+  text-shadow: 1px 1px 2px #0A0908;
 }
 @media screen and (min-width: 576px) {
   .histoire__albert_citation {
@@ -232,6 +232,7 @@
   font-size: 0.8rem;
   text-align: right;
   margin-bottom: 10%;
+  text-shadow: 1px 1px 2px #0A0908;
 }
 .histoire__presentation {
   display: flex;
@@ -309,10 +310,9 @@
 .histoire__presentation_propos_title {
   width: 100%;
   text-align: center;
-  color: #C879FF;
+  color: #7b506f;
   margin-bottom: 5%;
   font-size: 1.5rem;
-  text-shadow: 1px 1px 2px #0A0908;
 }
 @media screen and (min-width: 576px) {
   .histoire__presentation_propos_title {
@@ -331,7 +331,7 @@
 .histoire__cta {
   background-color: #FFFFC7;
   padding: 1rem 3rem;
-  color: #FCBCB8;
+  color: #0A0908;
   font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -354,8 +354,9 @@
   }
 }
 .histoire__cta:first-of-type {
-  background-color: #C879FF;
+  background-color: #7b506f;
   margin-left: 30%;
+  color: #fff;
 }
 .histoire__cta:nth-of-type(2) {
   margin-right: 30%;
@@ -383,13 +384,13 @@
   }
 }
 .produits__title {
-  color: #FCBCB8;
+  color: #FFFFC7;
   font-size: 2rem;
   margin-block: 10%;
   text-transform: uppercase;
   text-align: center;
   text-shadow: 1px 1px 2px #0A0908;
-  border: 2px solid #FFFFC7;
+  border: 2px solid #C879FF;
 }
 @media screen and (min-width: 576px) {
   .produits__title {
@@ -426,7 +427,6 @@
 .produits__present_vibration {
   color: #7b506f;
   margin-block: 2%;
-  text-shadow: 1px 1px 2px #FFFFC7;
   border: thick double #FFFFC7;
   border-radius: 25px;
 }
@@ -478,9 +478,12 @@
 .produits__liste_article {
   position: relative;
 }
+.produits__liste_article_img {
+  border: 0.5rem solid #FFFFC7;
+}
 .produits__liste_article_cta {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 5%;
   background-color: #7b506f;
   padding: 0.7rem 1rem;
@@ -489,11 +492,18 @@
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 25px;
+  display: none;
 }
 @media screen and (min-width: 576px) {
   .produits__liste_article_cta {
     padding: 1rem 1.5rem;
     font-size: 1rem;
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .produits__liste_article_cta {
+    top: 35%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -511,12 +521,12 @@
 }
 @media screen and (min-width: 1536px) {
   .produits__liste_article_cta {
-    top: 40%;
+    top: 35%;
   }
 }
 @media screen and (min-width: 1920px) {
   .produits__liste_article_cta {
-    top: 45%;
+    top: 40%;
   }
 }
 .produits__liste_article_name {

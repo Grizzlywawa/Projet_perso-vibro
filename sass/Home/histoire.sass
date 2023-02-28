@@ -13,6 +13,7 @@
             font-size: 1.5rem
             text-align: right
             padding-top: 10%
+            text-shadow: 1px 1px 2px $dark
 
             @media screen and (min-width: 576px)
                 font-size: 2rem
@@ -26,6 +27,7 @@
             font-size: .8rem
             text-align: right
             margin-bottom: 10%
+            text-shadow: 1px 1px 2px $dark
 
     &__presentation
         display: flex
@@ -83,10 +85,9 @@
             &_title
                 width: 100%
                 text-align: center
-                color: $light_violet
+                color: $dark_violet
                 margin-bottom: 5%
                 font-size: 1.5rem
-                text-shadow: 1px 1px 2px $dark
 
                 @media screen and (min-width:576px)
                     font-size: 2rem
@@ -100,7 +101,7 @@
     &__cta
         background-color: $pale_yellow
         padding: 1rem 3rem
-        color: $melon
+        color: $dark
         font-size: .8rem
         font-weight: bold
         text-transform: uppercase
@@ -117,8 +118,9 @@
             font-size: 3.5rem
 
         &:first-of-type
-            background-color: $light_violet
+            background-color: $dark_violet
             margin-left: 30%
+            color: #fff
 
         &:nth-of-type(2)
             margin-right: 30%
