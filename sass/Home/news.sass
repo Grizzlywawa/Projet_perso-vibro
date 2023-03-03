@@ -1,4 +1,5 @@
 .news
+    padding-inline: 5%
 
     &__title
         color: $dark_violet
@@ -6,3 +7,38 @@
         margin-block: 10%
         text-transform: uppercase
         text-align: center
+
+    &__slider
+        position: relative
+        width: 100%
+        margin: auto
+        display: flex
+        align-items: center
+
+        &_before
+            cursor: pointer
+            transition: opacity 0.3s ease
+            opacity: 0
+            position: absolute
+            font-size: 100px
+            color: rgba(255, 255, 199, 0.8)
+            background-color: rgba(123, 80, 111, 0.8)
+            padding: 10px
+            left: 0
+
+            &:hover
+                opacity: 1
+
+        &_after
+            cursor: pointer
+            transition: opacity 0.3s ease
+            opacity: 0
+            position: absolute
+            font-size: 100px
+            color: rgba(255, 255, 199, 0.8)
+            background-color: rgba(123, 80, 111, 0.8)
+            padding: 10px
+            right: 0
+
+            &:hover
+                opacity: 1
