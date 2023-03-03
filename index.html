@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/all.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="script.js"></script>
     <title>Vibroton&copy;</title>
   </head>
 
@@ -285,10 +284,30 @@
     <section id="news" class="news">
       <h2 class="news__title">Nos Nouveautés</h2>
       <div class="news__slider" id="slider">
-        <img class="news__slider_slide" src="assets/images/vibro-slider-1.jpg" alt="vibro" id="slide">
-        <div class="news__slider_before" id="before" onclick="ChangeSlide(-1)"><</div>
-        <div class="news__slider_after" id="after" onclick="ChangeSlide(1)">></div>
-    </div>
+        <img
+          class="news__slider_slide"
+          src="assets/images/vibro-slider-1.jpg"
+          alt="vibro"
+          id="slide"
+        />
+        <div class="news__slider_before" id="before" onclick="ChangeSlide(-1)">
+          <
+        </div>
+        <div class="news__slider_after" id="after" onclick="ChangeSlide(1)">
+          >
+        </div>
+        <a class="news__slider_btn" href="">Ajouter au panier</a>
+        <div class="news__slider_descr">
+          <div class="news__slider_descr_left">
+            <h3 id="produit" class="news__slider_descr_left_name">Produit1</h3>
+            <p id="descr" class="news__slider_descr_left_pres">
+              présentation produits1, matière1, moteur1, vitesse1,
+              rechargeable1,origine1
+            </p>
+          </div>
+          <h4 id="price" class="news__slider_descr_price">Prix1</h4>
+        </div>
+      </div>
     </section>
 
     <section id="avis" class="avis"></section>
@@ -296,5 +315,7 @@
     <section id="entreprise" class="entreprise"></section>
 
     <footer class="footer"></footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
