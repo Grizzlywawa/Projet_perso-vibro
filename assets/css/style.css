@@ -33,7 +33,7 @@
 .nav {
   display: flex;
   flex-wrap: wrap;
-  background: rgba(255, 255, 199, 0.1);
+  background: rgba(255, 255, 199, 0.3);
   align-items: center;
   justify-content: space-around;
   height: 10vh;
