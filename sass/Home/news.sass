@@ -1,4 +1,9 @@
 .news
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-around
+    border-bottom: 2px solid $dark_violet
 
     &__title
         color: $dark_violet
@@ -6,6 +11,9 @@
         margin-block: 10%
         text-transform: uppercase
         text-align: center
+
+        @media screen and (min-width: 576px)
+            font-size: 3rem
 
     &__slider
         position: relative
@@ -19,6 +27,9 @@
             width: 100%
             object-fit: cover
 
+            @media screen and (min-width: 576px)
+                max-height: 40vh
+
         &_before
             cursor: pointer
             transition: opacity 0.3s ease
@@ -28,6 +39,9 @@
             color: rgba(255 , 255 , 199, 0.8)
             padding: 10px
             left: 0
+
+            @media screen and (min-width: 576px)
+                font-size: 3rem
 
             &:hover
                 opacity: 1
@@ -42,12 +56,15 @@
             padding: 10px
             right: 0
 
+            @media screen and (min-width: 576px)
+                font-size: 3rem
+
             &:hover
                 opacity: 1
 
         &_btn
             position: absolute
-            top: 50%
+            top: 55%
             left: 35%
             background-color: $light_violet
             padding: .3rem 1rem
@@ -56,7 +73,12 @@
             font-weight: bold
             text-transform: uppercase
             border-radius: 25px
-            margin-bottom: 5%
+
+            @media screen and (min-width: 576px)
+                top: 60%
+                left: 40%
+                padding: .3rem 1.2rem
+                font-size: .7rem
 
         &_descr
             position: absolute
@@ -69,7 +91,10 @@
             align-items: center
             justify-content: space-between
             margin-inline: 20%
-            padding-block: 5%
+            padding-block: 2%
+
+            @media screen and (min-width:576px)
+                margin-inline: 30%
 
             &_left
                 margin-left: 5%
@@ -79,12 +104,48 @@
                     font-size: 1.2rem
                     padding-bottom: 2%
 
+                    @media screen and (min-width:576px)
+                        font-size: 1.4rem
+
                 &_pres
-                    font-family: Helvetica,sans-serif  
+                    font-family: Helvetica,sans-serif
                     font-size: .5rem
 
             &_price
-                margin-right: 10%
+                margin-right: 5%
                 width: 40%
-                text-align: right
+                text-align: center
                 font-size: 2rem
+
+    &__test
+        width: 45%
+        color: $light_violet
+        padding-left: 5%
+
+        @media screen and (min-width:576px)
+            font-size: 1.5rem
+
+    
+    &__attention
+        width: 45%
+        padding-right: 5%
+        margin-block: 5%
+
+        &_disclaimer
+            font-family: Helvetica, sans-serif
+            font-size: .5rem
+            margin-bottom: 5%
+
+            @media screen and (min-width:576px)
+                font-size: .7rem
+
+            &_name
+                font-family: 'Gobold', sans-serif
+
+        &_prevent
+            font-family: Helvetica, sans-serif
+            font-size: .2rem
+
+            @media screen and (min-width:576px)
+                font-size: .4rem
+                                
