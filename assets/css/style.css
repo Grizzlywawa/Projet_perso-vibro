@@ -376,6 +376,7 @@
   align-items: center;
   justify-content: center;
   border-bottom: 2px solid #7b506f;
+  padding-bottom: 5%;
 }
 @media screen and (min-width: 1024px) {
   .produits {
@@ -641,12 +642,27 @@
     font-size: 3rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .news__title {
+    margin-block: 5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .news__title {
+    width: 100%;
+  }
+}
 .news__slider {
   position: relative;
   width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .news__slider {
+    width: 50%;
+  }
 }
 .news__slider_slide {
   max-height: 30vh;
@@ -656,6 +672,16 @@
 @media screen and (min-width: 576px) {
   .news__slider_slide {
     max-height: 40vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .news__slider_slide {
+    max-height: 50vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .news__slider_slide {
+    max-height: 35vh;
   }
 }
 .news__slider_before {
@@ -671,6 +697,16 @@
 @media screen and (min-width: 576px) {
   .news__slider_before {
     font-size: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .news__slider_before {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .news__slider_before {
+    font-size: 2rem;
   }
 }
 .news__slider_before:hover {
@@ -689,6 +725,16 @@
 @media screen and (min-width: 576px) {
   .news__slider_after {
     font-size: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .news__slider_after {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .news__slider_after {
+    font-size: 2rem;
   }
 }
 .news__slider_after:hover {
@@ -714,6 +760,20 @@
     font-size: 0.7rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .news__slider_btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    left: 37%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .news__slider_btn {
+    padding: 0.3rem 1rem;
+    font-size: 0.6rem;
+    left: 40%;
+  }
+}
 .news__slider_descr {
   position: absolute;
   bottom: 0;
@@ -732,6 +792,16 @@
     margin-inline: 30%;
   }
 }
+@media screen and (min-width: 768px) {
+  .news__slider_descr {
+    margin-inline: 35%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .news__slider_descr {
+    margin-inline: 20%;
+  }
+}
 .news__slider_descr_left {
   margin-left: 5%;
   width: 40%;
@@ -745,6 +815,11 @@
     font-size: 1.4rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .news__slider_descr_left_name {
+    font-size: 1.2rem;
+  }
+}
 .news__slider_descr_left_pres {
   font-family: Helvetica, sans-serif;
   font-size: 0.5rem;
@@ -755,41 +830,72 @@
   text-align: center;
   font-size: 2rem;
 }
-.news__test {
+.news__text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (min-width: 1024px) {
+  .news__text {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.news__text_test {
   width: 45%;
   color: #C879FF;
   padding-left: 5%;
 }
 @media screen and (min-width: 576px) {
-  .news__test {
+  .news__text_test {
     font-size: 1.5rem;
   }
 }
-.news__attention {
+@media screen and (min-width: 1024px) {
+  .news__text_test {
+    width: 100%;
+  }
+}
+.news__text_attention {
   width: 45%;
   padding-right: 5%;
   margin-block: 5%;
 }
-.news__attention_disclaimer {
+@media screen and (min-width: 1024px) {
+  .news__text_attention {
+    width: 100%;
+    padding-right: 10%;
+  }
+}
+.news__text_attention_disclaimer {
   font-family: Helvetica, sans-serif;
   font-size: 0.5rem;
   margin-bottom: 5%;
 }
 @media screen and (min-width: 576px) {
-  .news__attention_disclaimer {
+  .news__text_attention_disclaimer {
     font-size: 0.7rem;
   }
 }
-.news__attention_disclaimer_name {
+.news__text_attention_disclaimer_name {
   font-family: "Gobold", sans-serif;
 }
-.news__attention_prevent {
+.news__text_attention_prevent {
   font-family: Helvetica, sans-serif;
   font-size: 0.2rem;
 }
 @media screen and (min-width: 576px) {
-  .news__attention_prevent {
+  .news__text_attention_prevent {
     font-size: 0.4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .news__text_attention_prevent {
+    font-size: 0.5rem;
   }
 }
 
