@@ -11,7 +11,6 @@
     left: 0
     z-index: 10000
 
-
     &__title
         color: $light_violet
         font-size: 2rem
@@ -23,13 +22,12 @@
 
         &_copy
             font-size: 1rem
-            
 
     &__list
         display: none
         text-transform: uppercase
-        font-size:1.5rem
-        text-shadow: 1px 1px $dark    
+        font-size: 1.5rem
+        text-shadow: 1px 1px $dark
 
         @media screen and (min-width: 1024px)
             display: flex
@@ -44,18 +42,57 @@
                 &:hover
                     border-bottom: solid $dark_violet 3px
 
-    &__burger
-        display: flex
-        flex-direction: column
-        gap: 0.2rem
+    &__sidenav
+        width: 250px
+        position: fixed
+        z-index: 1
+        top: 10vh
+        left: -250px
+        background-color: rgba(255, 255, 199, .3)
+        padding-top: 60px
+        transition: left 0.5s ease
 
         @media screen and (min-width: 1024px)
             display: none
 
-        &_trait
-            width: 30px
-            height: 6px
-            background-color: $light_violet
+        &_close
+            position: absolute
+            top: 0
+            right: 25px
+            font-size: 36px
+            color: $light_violet
+
+            &:hover
+                color: $dark_violet
+
+        &_liste
+            list-style-type: none
+            padding-left: 5%
+            padding-block: 5%
+
+            &_link
+                padding: 10px 8px 10px 32px
+                font-size: 1.5rem
+                color: $light_violet
+                display: block
+                transition: 0.3s
+
+                &:hover
+                    color: $dark_violet
+
+    &__openbtn
+
+        @media screen and (min-width: 1024px)
+            display: none
+
+        &_burger-icon
+
+            &_slide
+                display: block
+                width: 35px
+                height: 5px
+                background-color: $light_violet
+                margin: 6px 0
 
     &__lien
         color: $light_violet

@@ -1,5 +1,20 @@
 console.log("Script fonctionne");
 
+let sidenav = document.getElementById("mySidenav");
+let openBtn = document.getElementById("openBtn");
+let closeBtn = document.getElementById("closeBtn");
+
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
+
+function openNav() {
+  sidenav.style.left = "0";
+}
+
+function closeNav() {
+  sidenav.style.left = "";
+}
+
 let navbar = document.querySelector("#navbar");
 window.onscroll = function () {
   if (

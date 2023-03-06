@@ -78,20 +78,57 @@
 .nav__list_page_lien:hover {
   border-bottom: solid #7b506f 3px;
 }
-.nav__burger {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+.nav__sidenav {
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 10vh;
+  left: -250px;
+  background-color: rgba(255, 255, 199, 0.3);
+  padding-top: 60px;
+  transition: left 0.5s ease;
 }
 @media screen and (min-width: 1024px) {
-  .nav__burger {
+  .nav__sidenav {
     display: none;
   }
 }
-.nav__burger_trait {
-  width: 30px;
-  height: 6px;
+.nav__sidenav_close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  color: #C879FF;
+}
+.nav__sidenav_close:hover {
+  color: #7b506f;
+}
+.nav__sidenav_liste {
+  list-style-type: none;
+  padding-left: 5%;
+  padding-block: 5%;
+}
+.nav__sidenav_liste_link {
+  padding: 10px 8px 10px 32px;
+  font-size: 1.5rem;
+  color: #C879FF;
+  display: block;
+  transition: 0.3s;
+}
+.nav__sidenav_liste_link:hover {
+  color: #7b506f;
+}
+@media screen and (min-width: 1024px) {
+  .nav__openbtn {
+    display: none;
+  }
+}
+.nav__openbtn_burger-icon_slide {
+  display: block;
+  width: 35px;
+  height: 5px;
   background-color: #C879FF;
+  margin: 6px 0;
 }
 .nav__lien {
   color: #C879FF;
@@ -332,7 +369,7 @@
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .histoire__presentation_propos_text {
+  .histoire__presentation_propos_text_hidden {
     display: inline;
   }
 }
