@@ -1,0 +1,152 @@
+.avis
+    position: relative
+    padding-inline: 5%
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    padding-bottom: 5%
+
+    &::after
+        content: ""
+        width: 80%
+        border-bottom: 2px solid $dark_violet
+        position: absolute
+        bottom: 0
+        right: 0
+
+    &__title
+        color: $dark_violet
+        font-size: 2rem
+        margin-block: 10%
+        text-transform: uppercase
+        text-align: center
+
+    &__notice
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        margin-bottom: 10%
+
+        &:nth-of-type(4)
+            display: none
+
+        &:nth-of-type(5)
+            display: none
+
+        &_photo
+            border-radius: 10px 100px
+            max-height: 70px
+            max-width: 70px
+
+        &_name
+            color: $light_violet
+
+            &_date
+                font-size: .5rem
+                color: $light_violet
+                font-family: Helvetica, san-serif
+
+        &_op
+            background-color: $light_violet
+            margin-block: 5%
+            border: 2px solid $dark_violet
+            border-radius: 25px
+            width: 100%
+
+            &_txt
+                font-family: Helvetica, sans-serif
+                color: $pale_yellow
+                padding: 5%
+
+            &_like
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                align-items: center
+                margin-bottom: 2%
+                color: $pale_yellow
+
+                &_heart
+                    color: $pale_yellow
+                    height: 20px
+
+                &_number
+                    margin-left: 5%
+
+    &__contact
+        border: 5px solid $pale_yellow
+        border-radius: 25px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+
+        &_form
+            margin: 0 auto
+            width: 100%
+            padding: 1em
+
+            &_name
+                margin-top: 1em
+
+                &_input
+                    font-size: 1em
+                    width: 100%
+                    box-sizing: border-box
+                    border: 1px solid $light_violet
+                    border-radius: 10px
+
+                    &::placeholder
+                        font-family: Helvetica, sans-serif
+
+                    &:focus
+                        border-color: $dark_violet
+
+            &_mail
+                margin-top: 1rem
+
+                &_input
+                    font-size: 1rem
+                    width: 100%
+                    box-sizing: border-box
+                    border: 1px solid $light_violet
+                    border-radius: 10px
+
+                    &::placeholder
+                        font-family: Helvetica, sans-serif
+
+                    &:focus
+                        border-color: $dark_violet
+
+            &_msg
+                margin-top: 1rem
+
+                &_txt
+                    font-size: 1rem
+                    width: 100%
+                    box-sizing: border-box
+                    border: 1px solid $light_violet
+                    vertical-align: top
+                    resize: none
+                    height: 25vh
+
+                    &::placeholder
+                        font-family: Helvetica, sans-serif
+
+                    &:focus
+                        border-color: $dark_violet
+
+        &_button
+            margin-block: 5%
+
+            &_btn
+                font-family: 'Gobold', sans-serif
+                color: $pale_yellow
+                background-color: $dark_violet
+                border-color: transparent
+                border-radius: 10px
+                cursor: pointer
+

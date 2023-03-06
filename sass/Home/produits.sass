@@ -1,15 +1,23 @@
 .produits
+    position: relative
     padding-inline: 5%
     display: flex
     flex-wrap: wrap
     align-items: center
     justify-content: center
-    border-bottom: 2px solid $dark_violet
     padding-bottom: 5%
 
     @media screen and (min-width: 1024px)
         justify-content: space-between
         align-items: flex-start
+
+    &::after
+        content: ""
+        width: 80%
+        border-bottom: 2px solid $dark_violet
+        position: absolute
+        bottom: 0
+        right: 0
 
     &__title
         color: $pale_yellow

@@ -15,20 +15,6 @@ function closeNav() {
   sidenav.style.left = "";
 }
 
-let navbar = document.querySelector("#navbar");
-window.onscroll = function () {
-  if (
-    (document.body.scrollTop > 900) |
-    (document.documentElement.scrollTop > 900)
-  ) {
-    navbar.style.backgroundColor = "rgba(0, 0, 0, .3)";
-  } else {
-    navbar.style.backgroundColor = "";
-  }
-};
-window.addEventListener("scroll", function () {
-  console.log("scroll");
-});
 
 const slide = [
   "assets/images/vibro-slider-1.jpg",

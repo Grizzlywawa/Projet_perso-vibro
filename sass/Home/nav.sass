@@ -1,9 +1,9 @@
 .nav
     display: flex
     flex-wrap: wrap
-    background: rgba(255, 255, 199, .3)
     align-items: center
     justify-content: space-around
+    background-color: $dark_violet
     height: 10vh
     position: fixed
     width: 100%
@@ -45,10 +45,10 @@
     &__sidenav
         width: 250px
         position: fixed
+        background-color: $dark_violet
         z-index: 1
         top: 10vh
         left: -250px
-        background-color: rgba(255, 255, 199, .3)
         padding-top: 60px
         transition: left 0.5s ease
 
@@ -93,6 +93,7 @@
                 height: 5px
                 background-color: $light_violet
                 margin: 6px 0
+                
 
     &__lien
         color: $light_violet

@@ -1,9 +1,18 @@
 .news
+    position: relative
     display: flex
     flex-wrap: wrap
     align-items: center
     justify-content: space-around
-    border-bottom: 2px solid $dark_violet
+    padding-bottom: 10%
+
+    &::after
+        content: ""
+        width: 80%
+        border-bottom: 2px solid $dark_violet
+        position: absolute
+        bottom: 0
+        left: 0
 
     &__title
         color: $dark_violet
@@ -20,6 +29,9 @@
 
         @media screen and (min-width: 1024px)
             width: 100%
+
+        @media screen and (min-width: 1536px)
+            font-size: 4rem
 
     &__slider
         position: relative
@@ -45,6 +57,15 @@
             @media screen and (min-width: 1024px)
                 max-height: 35vh
 
+            @media screen and (min-width: 1280px)
+                max-height: 45vh
+
+            @media screen and (min-width: 1536px)
+                max-height: 50vh
+
+            @media screen and (min-width: 1920px)
+                max-height: 60vh
+
         &_before
             cursor: pointer
             transition: opacity 0.3s ease
@@ -63,6 +84,12 @@
 
             @media screen and (min-width: 1024px)
                 font-size: 2rem
+
+            @media screen and (min-width: 1280px)
+                font-size: 3rem
+
+            @media screen and (min-width: 1536px)
+                font-size: 4rem
 
             &:hover
                 opacity: 1
@@ -86,60 +113,44 @@
             @media screen and (min-width: 1024px)
                 font-size: 2rem
 
+            @media screen and (min-width: 1280px)
+                font-size: 3rem
             
+            @media screen and (min-width: 1536px)
+                font-size: 4rem
 
             &:hover
                 opacity: 1
-
-        &_btn
-            position: absolute
-            top: 55%
-            left: 35%
-            background-color: $light_violet
-            padding: .3rem 1rem
-            color: $melon
-            font-size: .5rem
-            font-weight: bold
-            text-transform: uppercase
-            border-radius: 25px
-
-            @media screen and (min-width: 576px)
-                top: 60%
-                left: 40%
-                padding: .3rem 1.2rem
-                font-size: .7rem
-
-            @media screen and (min-width: 768px)
-                padding: .6rem 1.5rem
-                font-size: 1rem
-                left: 37%
-
-            @media screen and (min-width: 1024px)
-                padding: .3rem 1rem
-                font-size: .6rem
-                left: 40%
 
         &_descr
             position: absolute
             bottom: 0
             color: $pale_yellow
             left: 0
-            background: rgba(0, 0, 0, .3)
             display: flex
             flex-wrap: wrap
             align-items: center
-            justify-content: space-between
+            justify-content: center
             margin-inline: 20%
             padding-block: 2%
 
             @media screen and (min-width:576px)
-                margin-inline: 30%
+                margin-inline: 25%
 
             @media screen and (min-width: 768px)
-                margin-inline: 35%
+                margin-inline: 30%
 
             @media screen and (min-width: 1024px)
                 margin-inline: 20%
+
+            @media screen and (min-width: 1280px)
+                margin-inline: 25%
+
+            @media screen and (min-width: 1536px)
+                margin-inline: 30%
+
+            @media screen and (min-width: 1920px)
+                margin-inline: 35%
 
             &_left
                 margin-left: 5%
@@ -148,6 +159,7 @@
                 &_name
                     font-size: 1.2rem
                     padding-bottom: 2%
+                    text-shadow: 1px 1px $dark
 
                     @media screen and (min-width:576px)
                         font-size: 1.4rem
@@ -158,12 +170,39 @@
                 &_pres
                     font-family: Helvetica,sans-serif
                     font-size: .5rem
+                    text-shadow: 1px 1px $dark
 
             &_price
-                margin-right: 5%
                 width: 40%
                 text-align: center
                 font-size: 2rem
+                text-shadow: 1px 1px $dark
+
+            &_btn
+                background-color: $light_violet
+                padding: .3rem 1rem
+                color: $melon
+                font-size: .5rem
+                font-weight: bold
+                text-transform: uppercase
+                border-radius: 25px
+                margin-top: 5%
+
+                @media screen and (min-width: 576px)
+                    padding: .3rem 1.2rem
+                    font-size: .7rem
+
+                @media screen and (min-width: 768px)
+                    padding: .6rem 1.5rem
+                    font-size: 1rem
+
+                @media screen and (min-width: 1024px)
+                    padding: .3rem 1rem
+                    font-size: .6rem
+
+                @media screen and (min-width: 1280px)
+                    padding: .3rem 1.2rem
+                    font-size: 1rem
 
     &__text
 
@@ -189,6 +228,11 @@
 
             @media screen and (min-width: 1024px)
                 width: 100%
+                padding-left: 0
+                padding-right: 5%
+
+            @media screen and (min-width: 1920px)
+                font-size: 2.5rem
 
         &_attention
             width: 45%
@@ -197,7 +241,7 @@
 
             @media screen and (min-width: 1024px)
                 width: 100%
-                padding-right: 10%
+                padding-right: 5%
 
             &_disclaimer
                 font-family: Helvetica, sans-serif
@@ -206,6 +250,12 @@
 
                 @media screen and (min-width:576px)
                     font-size: .7rem
+
+                @media screen and (min-width: 1280px)
+                    font-size: 1rem
+
+                @media screen and (min-width: 1920px)
+                    font-size: 1.2rem
 
                 &_name
                     font-family: 'Gobold', sans-serif
@@ -219,3 +269,9 @@
 
                 @media screen and (min-width: 768px)
                     font-size: .5rem
+
+                @media screen and (min-width: 1536px)
+                    font-size: .7rem
+
+                @media screen and (min-width: 1920px)
+                    font-size: .8rem
