@@ -328,6 +328,14 @@
   font-family: Helvetica, sans-serif;
   padding: 0 5% 5%;
 }
+.histoire__presentation_propos_text_hidden {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .histoire__presentation_propos_text {
+    display: inline;
+  }
+}
 .histoire__cta {
   background-color: #FFFFC7;
   padding: 1rem 3rem;
