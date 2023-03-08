@@ -9,12 +9,13 @@ closeBtn.onclick = closeNav;
 
 function openNav() {
   sidenav.style.left = "0";
+  document.body.classList.add("lock_scroll");
 }
 
 function closeNav() {
   sidenav.style.left = "";
+  document.body.classList.remove("lock_scroll")
 }
-
 
 const slide = [
   "assets/images/vibro-slider-1.jpg",
@@ -58,3 +59,4 @@ function ChangeSlide(sens) {
   if (numero > price.length - 1) numero = 0;
   document.getElementById("price").innerHTML = price[numero];
 }
+

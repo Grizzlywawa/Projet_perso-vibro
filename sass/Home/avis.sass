@@ -7,6 +7,16 @@
     justify-content: center
     padding-bottom: 5%
 
+    @media screen and (min-width:576px)
+        padding-inline: 10%
+
+    @media screen and (min-width:1024px)
+        padding-inline: 5%
+        padding-bottom: 25%
+
+    @media screen and (min-width:1536px)
+        padding-bottom: 10%
+
     &::after
         content: ""
         width: 80%
@@ -21,132 +31,255 @@
         margin-block: 10%
         text-transform: uppercase
         text-align: center
+        text-decoration: underline solid $pale_yellow
 
-    &__notice
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
-        align-items: center
-        width: 100%
-        margin-bottom: 10%
+        @media screen and (min-width:576px)
+            font-size: 2.5rem
 
-        &:nth-of-type(4)
-            display: none
+        @media screen and (min-width:768px)
+            font-size: 3rem
 
-        &:nth-of-type(5)
-            display: none
-
-        &_photo
-            border-radius: 10px 100px
-            max-height: 70px
-            max-width: 70px
-
-        &_name
-            color: $light_violet
-
-            &_date
-                font-size: .5rem
-                color: $light_violet
-                font-family: Helvetica, san-serif
-
-        &_op
-            background-color: $light_violet
+        @media screen and (min-width:1024px)
             margin-block: 5%
-            border: 2px solid $dark_violet
-            border-radius: 25px
+
+        @media screen and (min-width:1536px)
+            font-size: 4rem
+        
+
+    &__grid
+
+        display: grid
+        grid-template-columns: repeat(1)
+
+        @media screen and (min-width:1024px)
+            display: grid
+            grid-template-columns: repeat(2, 2fr)
+            gap: 5%
+
+        @media screen and (min-width:1280px)
+            padding-inline: 10%
+
+        @media screen and (min-width:1536px)
+            grid-template-columns: repeat(3, 2fr)
+
+        @media screen and (min-width:1920px)
+            padding-inline: 0
+
+        &_notice
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: center
             width: 100%
+            margin-bottom: 10%
 
-            &_txt
-                font-family: Helvetica, sans-serif
-                color: $pale_yellow
-                padding: 5%
+            @media screen and (min-width:576px)
+                padding-inline: 10%
 
-            &_like
-                display: flex
-                flex-wrap: wrap
-                justify-content: center
-                align-items: center
-                margin-bottom: 2%
-                color: $pale_yellow
+            @media screen and (min-width:768px)
+                padding-inline: 15%
 
-                &_heart
-                    color: $pale_yellow
-                    height: 20px
+            @media screen and (min-width:1024px)
+                padding-inline: 0
+                align-items: flex-start
+                margin-bottom: 0
 
-                &_number
-                    margin-left: 5%
+            &:nth-of-type(1)
+                @media screen and (min-width:1024px)
+                    grid-column: 1
+                    grid-row: 1 / 3
 
-    &__contact
-        border: 5px solid $pale_yellow
-        border-radius: 25px
-        display: flex
-        flex-wrap: wrap
-        justify-content: center
-        align-items: center
 
-        &_form
-            margin: 0 auto
-            width: 100%
-            padding: 1em
+            &:nth-of-type(2)
+                @media screen and (min-width:1024px)
+                    grid-column: 2
+                    grid-row: 1 
+
+            &:nth-of-type(3)
+                @media screen and (min-width:1024px)
+                    grid-column: 2
+                    grid-row: 2
+
+                @media screen and (min-width:1536px)
+                    grid-column: 3
+                    grid-row: 1                                  
+
+            &:nth-of-type(4)
+                display: none
+
+                @media screen and (min-width:1024px)
+                    display: flex
+                    grid-column: 1
+                    grid-row: 3
+
+                @media screen and (min-width:1536px)
+                    grid-column: 2
+                    grid-row: 2
+
+            &:nth-of-type(5)
+                display: none
+
+                @media screen and (min-width:1024px)
+                    display: flex
+                    grid-column: 2
+                    grid-row: 3
+
+                @media screen and (min-width:1536px)
+                    grid-column: 3
+                    grid-row: 2
+        
+            &_photo
+                border-radius: 10px 100px
+                max-height: 70px
+                max-width: 70px
+
+                @media screen and (min-width:576px)
+                    max-height: 100px
+                    max-width: 100px
+
+                @media screen and (min-width:1280px)
+                    max-height: 120px
+                    max-width: 120px
 
             &_name
-                margin-top: 1em
+                color: $light_violet
 
-                &_input
-                    font-size: 1em
-                    width: 100%
-                    box-sizing: border-box
-                    border: 1px solid $light_violet
-                    border-radius: 10px
+                &_date
+                    font-size: .5rem
+                    color: $light_violet
+                    font-family: Helvetica, san-serif
 
-                    &::placeholder
-                        font-family: Helvetica, sans-serif
-
-                    &:focus
-                        border-color: $dark_violet
-
-            &_mail
-                margin-top: 1rem
-
-                &_input
-                    font-size: 1rem
-                    width: 100%
-                    box-sizing: border-box
-                    border: 1px solid $light_violet
-                    border-radius: 10px
-
-                    &::placeholder
-                        font-family: Helvetica, sans-serif
-
-                    &:focus
-                        border-color: $dark_violet
-
-            &_msg
-                margin-top: 1rem
+            &_op
+                background-color: $light_violet
+                margin-block: 5%
+                border: 2px solid $dark_violet
+                border-radius: 25px
+                width: 100%
 
                 &_txt
-                    font-size: 1rem
-                    width: 100%
-                    box-sizing: border-box
-                    border: 1px solid $light_violet
-                    vertical-align: top
-                    resize: none
-                    height: 25vh
+                    font-family: Helvetica, sans-serif
+                    color: $pale_yellow
+                    padding: 5%
 
-                    &::placeholder
-                        font-family: Helvetica, sans-serif
+                &_like
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: center
+                    align-items: center
+                    margin-bottom: 2%
+                    color: $pale_yellow
 
-                    &:focus
-                        border-color: $dark_violet
+                    &_heart
+                        color: $pale_yellow
+                        height: 20px
 
-        &_button
-            margin-block: 5%
+                    &_number
+                        margin-left: 5%
 
-            &_btn
-                font-family: 'Gobold', sans-serif
-                color: $pale_yellow
-                background-color: $dark_violet
-                border-color: transparent
-                border-radius: 10px
-                cursor: pointer
+        &_contact
+            border: 5px solid $pale_yellow
+            border-radius: 25px
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            width: 100%
 
+            @media screen and (min-width:1024px)
+                grid-row: 4
+                grid-column: 1 / 3
+
+            @media screen and (min-width:1536px)
+                grid-row: 3
+                grid-column: 1 / 4
+                padding-inline: 15%
+                margin-bottom: 5%
+
+            &_title
+                color: $light_violet
+                font-size: 1.5rem
+                text-transform: uppercase
+                padding-top: 5%
+                text-shadow: 1px 1px $dark
+
+                @media screen and (min-width:1024px)
+                    font-size: 2rem
+
+                @media screen and (min-width:1920px)
+                    font-size: 3rem
+                
+            &_form
+                margin: 0 auto
+                width: 100%
+                padding: 1rem
+
+                &_name
+                    margin-top: 1rem
+
+                    &_input
+                        font-size: 1rem
+                        width: 100%
+                        box-sizing: border-box
+                        border: 1px solid $light_violet
+                        border-radius: 10px
+
+                        &::placeholder
+                            font-family: Helvetica, sans-serif
+
+                        &:focus
+                            border-color: $dark_violet
+
+                &_mail
+                    margin-top: 1rem
+
+                    &_input
+                        font-size: 1rem
+                        width: 100%
+                        box-sizing: border-box
+                        border: 1px solid $light_violet
+                        border-radius: 10px
+
+                        &::placeholder
+                            font-family: Helvetica, sans-serif
+
+                        &:focus
+                            border-color: $dark_violet
+
+                &_msg
+                    margin-top: 1rem
+
+                    &_txt
+                        font-size: 1rem
+                        width: 100%
+                        box-sizing: border-box
+                        border: 1px solid $light_violet
+                        vertical-align: top
+                        resize: none
+                        height: 25vh
+
+                        @media screen and (min-width:1024px)
+                            height: 15vh
+
+                        &::placeholder
+                            font-family: Helvetica, sans-serif
+
+                        &:focus
+                            border-color: $dark_violet
+
+            &_button
+                margin-block: 5%
+
+                @media screen and (min-width:1024px)
+                    margin-top: 0
+
+                &_btn
+                    font-family: 'Gobold', sans-serif
+                    color: $pale_yellow
+                    background-color: $dark_violet
+                    border-color: transparent
+                    border-radius: 10px
+                    cursor: pointer
+                    padding: .3rem .6rem
+
+                    @media screen and (min-width:576px)
+                        font-size: 1.5rem
