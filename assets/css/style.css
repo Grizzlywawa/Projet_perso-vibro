@@ -495,7 +495,7 @@
     object-fit: cover;
   }
 }
-@merdia screen and (min-width:1536px) {
+@media screen and (min-width: 1536px) {
   .produits__present_video {
     height: 80vh;
   }
