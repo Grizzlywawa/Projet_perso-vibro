@@ -1,11 +1,20 @@
 .footer
     background-color: $dark
     color: $dark_violet
-    padding-inline: 5%
+    padding: 5%
     display: grid
     grid-template-columns: repeat(2, 1fr)
-    gap: 10px
-    padding-block: 5%
+    gap: 25px
+
+    @media screen and (min-width:1024px)
+        grid-template-columns: repeat(3, 1fr)
+        padding-bottom: 2%
+
+    @media screen and (min-width:1280px)
+        grid-template-columns: repeat(4, 1fr)
+
+    @media screen and (min-width:1536px)
+        padding-top: 2%
 
     &__left
         display: flex
@@ -13,6 +22,12 @@
         align-items: center
         justify-content: flex-start
         font-size: .7rem
+
+        @media screen and (min-width:576px)
+            font-size: 1rem
+
+        @media screen and (min-width:1536px)
+            font-size: 1.2rem
 
         &_about
             width: 100%
@@ -27,11 +42,26 @@
             color: $dark_violet
 
     &__rs
+        grid-column: 2
         display: flex
         flex-wrap: wrap
         align-items: center
         justify-content: flex-start
         font-size: .7rem
+        padding-left: 50%
+
+        @media screen and (min-width:576px)
+            font-size: 1rem
+
+        @media screen and (min-width:768px)
+            margin-inline: auto
+
+        @media screen and (min-width:1024px)
+            margin-inline: 0
+            padding-left: 0
+
+        @media screen and (min-width:1536px)
+            font-size: 1.2rem
 
         &_fb
             width: 100%
@@ -55,9 +85,35 @@
         grid-column: 1 / 3
         font-family: Helvetica, sans-serif
         font-size: .7rem
+        margin-inline: auto
+
+        @media screen and (min-width:768px)
+            grid-column: 1
+            margin-inline: 0
+            font-size: .9rem
+
+        @media screen and (min-width:1024px)
+            grid-column: 3
+
+        @media screen and (min-width:1536px)
+            font-size: 1rem
 
         &_title
             margin-bottom: 10px
+
+        &_input
+            background-color: $pale_yellow
+            color: $dark_violet
+            border: transparent
+            border-radius: 5px
+            font-family: Helvetica, sans-serif
+
+        &_btn
+            background-color: $pale_yellow
+            color: $dark_violet
+            border: transparent
+            border-radius: 5px
+            font-family: Helvetica, sans-serif
 
     &__infos
         grid-column: 1 / 3
@@ -66,6 +122,32 @@
         margin-inline: auto
         text-align: center
 
+        @media screen and (min-width:768px)
+            grid-column: 2
+            margin-inline: 0
+            text-align: left
+            font-size: .9rem
+
+        @media screen and (min-width:1024px)
+            text-align: center
+
+        @media screen and (min-width:1280px)
+            grid-column: 4
+
+        @media screen and (min-width:1536px)
+            font-size: 1rem
+
     &__sign
         font-family: Helvetica, sans-serif
         font-size: .3rem
+
+        @media screen and (min-width:768px)
+            font-size: .5rem
+            grid-column: 1 / 3
+            margin-inline: auto
+
+        @media screen and (min-width:1024px)
+            grid-column: 1 / 4
+
+        @media screen and (min-width:1280px)
+            grid-column: 1 / 5

@@ -18,22 +18,22 @@ function closeNav() {
 }
 
 const slide = [
-  "assets/images/vibro-slider-1.jpg",
-  "assets/images/vibro-slider-3.jpg",
-  "assets/images/vibro-slider-4.jpg",
-  "assets/images/vibro-slider-5.jpg",
+  "assets/images/Lelo-Soraya-Wave-1.webp",
+  "assets/images/ROMP-Beat-1.webp",
+  "assets/images/Vibromasseur-4.webp",
+  "assets/images/Vibromasseur-7.webp",
 ];
 
-const produit = ["Produit1", "Produit2", "Produit3", "Produit4"];
+const produit = ["Soraya", "Romp", "Svakom", "Cruise"];
 
 const descr = [
-  "présentation produits1, matière1, moteur1, vitesse1, rechargeable1 ,origine1",
-  "présentation produits2, matière2, moteur2, vitesse2, rechargeable2, origine2",
-  "présentation produits3, matière3, moteur3, vitesse3, rechargeable3, origine3",
-  "présentation produits4, matière4, moteur4, vitesse4, rechargeable4, origine4",
+  "Son design, sa motorisation et ses mouvements sont bien pensés en termes d'efficacité...",
+  "Sa matière douce et saine, sa facilité d'utilisation et les sensations de plaisirs offertes...",
+  "Sa matière très douce, son design incurvé avec sa tête plate et surtout sa grande puissance...",
+  "Sa stimulation double est efficace, et plus particulièrement la partie succion qui nous a donné...",
 ];
 
-const price = ["Prix1", "Prix2", "Prix3", "Prix4"];
+const price = ["259€", "25€", "65€", "157€"];
 
 let numero = 0;
 
