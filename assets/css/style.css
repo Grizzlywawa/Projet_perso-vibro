@@ -147,6 +147,9 @@
 .nav__lien {
   color: #C879FF;
 }
+.nav__lien:hover {
+  color: #0A0908;
+}
 
 .header {
   width: 100%;
