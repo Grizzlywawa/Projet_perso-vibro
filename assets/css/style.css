@@ -487,6 +487,12 @@
     font-size: 4rem;
   }
 }
+.produits__present {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (min-width: 1024px) {
   .produits__present {
     width: 45%;
